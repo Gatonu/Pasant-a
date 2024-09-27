@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title> 
+    <!--Box icons-->
+    
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--CUSTOM JS-->
+    <script src="./js/app.js" defer></script>
+    <!--Charts.js-->
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    
+  
+
+</head>
+
+<script></script>
+    <body bgcolor="#f5f6f5"> 
+                    
+        
+          <!-- BANNER SUPERIOR -->
+    <div class="top-banner">
+        <div class="logo-container">
+            <img src="./img/LogoHorizontal-SA blanco.png" alt="Logo" class="logo"> 
+        </div>
+        <div class="user-profile">
+            <i class='bx bx-bell'></i>
+            <i class='bx bx-user'></i>
+        </div>
+    </div>
+
+    <div class="orange-banner">
+        <h1>Resumen de Facturación</h1>
+    </div>
+    
+
+        <div class="menu-dashboard">
+            <!-- TOP MENU -->
+            <div class="top-menu">
+               
+                <div class="toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+                
+            
+            <!-- MENU -->
+            <div class="menu-content">
+                <div class="enlace">
+                    <i class='bx bxs-home'></i>
+                    <span>Menú principal</span>
+                </div>
+                <div class="enlace">
+                    <i class='bx bx-receipt'></i>
+                    <span>Facturas</span>
+                </div>
+                <div class="enlace">
+                    <i class='bx bx-money'></i>
+                    <span>Formulario de Datos</span>
+                </div>
+            </div>
+        </div>
+
+
+        
+       <div class="dashboard">
+            <div class="container">
+                
+                <div class="stats">
+                    
+                    <div class="stat-card">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Facturas Emitidas</h3>
+                        <p id="total-facturas">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class='bx bx-cart'></i>
+                        <h3>Productos Vendidos</h3>
+                        <p id="productos-vendidos">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class='bx bx-dollar'></i>
+                        <h3>Monto Total Facturado</h3>
+                        <p id="total-facturado">0.00₡</p>   
+                    </div>
+                    
+                    </div>
+                    <div class="chart-container" style="width: 60%; margin: auto;">
+                        <h1>Productos más vendidos</h1>
+                        <canvas id="productosMasVendidos"></canvas>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </body> 
+
+</html>
